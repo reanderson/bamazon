@@ -32,8 +32,34 @@ MYSQL_PASSWORD=your-mysql-password
 - - -
 ## bamazonCustomer.js
 
+### Main Menu
+![Menu](readme_imgs/customer_01.png)
+
+#### Search by Department
+![Choose Department](readme_imgs/customer_02.png)
+![Choose Item](readme_imgs/customer_03.png)
+
+#### Purchasing Interface
+![Successful Purchase](readme_imgs/customer_04.png)
+![Failed Purchase](readme_imgs/customer_05.png)
+
 - - -
 ## bamazonManager.js
+
+### Main Menu
+![Menu](readme_imgs/manager_01.png)
+
+#### View All Items
+![View All](readme_imgs/manager_02.png)
+
+#### View Low Inventory
+![Low Inventory](readme_imgs/manager_03.png)
+
+#### Add Stock
+![Add Stock](readme_imgs/manager_04.png)
+
+#### Add New Item
+![Add Item](readme_imgs/manager_05.png)
 
 - - -
 ## NPM Packages Used

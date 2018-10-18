@@ -187,8 +187,6 @@ function newProduct() {
     }
   }])
   .then(answers => {
-    console.log(answers)
-
     connection.query(`INSERT INTO products (product_name, department_name, price, stock_quantity)
     VALUES
     (?, ?, ?, ?)`, [answers.product, answers.department, answers.price, answers.stock], function(err,res) {
