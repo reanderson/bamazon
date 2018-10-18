@@ -122,16 +122,9 @@ function searchByName() {
 // User may choose from all available departments
 function searchByDept() {
   console.log("")
-  connection.query("SELECT department_name FROM products", function (err, res) {
+  connection.query("SELECT DISTINCT department_name FROM products", function (err, res) {
     if (err) throw err;
-    const deptList = []
-
-    res.forEach(function(item) {
-      if (!deptList.includes(item.department_name)) {
-        deptList.push(item.department_name)
-      }
-    })
-
+    const deptList = res.map(item => item.department_name)
     deptList.push("New Search")
 
     inquirer
